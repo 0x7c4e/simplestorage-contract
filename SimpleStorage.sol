@@ -34,7 +34,9 @@ contract SimpleStorage {
     // });
 
     // FUNCTIONS
-    function store(uint256 _favoriteNumber) public {
+
+    // the virtual  keyword indicates that this fucntion is overridable
+    function store(uint256 _favoriteNumber) public virtual  {
         myFavoriteNumber = _favoriteNumber;
     }
 
